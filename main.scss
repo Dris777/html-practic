@@ -1,4 +1,46 @@
 
-body{
-  background-color:cadetblue;
+//body{
+//  background-color:cadetblue;
+//}
+
+.container{
+  max-width: 1590px;
+}
+
+
+.hero{
+  max-width: 1925px;
+  height: 788px;
+  background-color: #141414;
+  background-image: url("./images/hero-1x.png");
+  background-size:1925px 788px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url("./images/hero-2x.png");
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi),
+  (min-resolution: 3dppx){
+    background-image: url("./images/hero-3x.png");
+  }
+}
+
+
+.innovations{
+  max-width: 1925px;
+  height:761px;
+  background-image:url("./images/bg-1x.png");
+  background-size:1925px 761px;
+  //ЕСЛИ НЕ ЗАДАНА ШИРИНА БЛОКА ТОГДА ДАВЕМ КОВЕР НА ФОН
+
+  @media (min-device-pixel-ratio:2),(min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url("./images/bg-2x.png");
+  }
+
+  @media (min-device-pixel-ratio:2),(min-resolution:288dpi),
+  (min-resolution: 3dppx){
+    background-image: url("./images/bg-3x.png");
+  }
 }
