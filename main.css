@@ -1,13 +1,71 @@
+img {
+  display: block;
+  max-widht: 100%;
+  height: auto;
+}
+
+.header .header-top .header-top__container .header-top__link {
+  text-decoration: none;
+}
+
+.header .header-top .header-top__container .nav__list {
+  list-style: none;
+}
+
 .container {
   max-width: 1590px;
+  margin: 0 auto;
+}
+
+.header .header-top {
+  background-color: #141414;
+}
+.header .header-top .header-top__container {
+  display: flex;
+  align-items: center;
+}
+.header .header-top .header-top__container .nav__list {
+  display: flex;
+  gap: 60px;
+}
+.header .header-top .header-top__container .nav__list .nav__item {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+}
+.header .header-top .header-top__container .header-top__icon {
+  fill: #fff;
+  margin-left: auto;
+}
+.header .header-top .header-top__container .header-top__link {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-left: 15px;
+}
+.header .header-bottom {
+  background-color: #ECF1F2;
+}
+.header .header-bottom .header-bottom__container {
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .header-bottom__container .header-bottom__logo {
+  margin-right: 158px;
+}
+.header .header-bottom .header-bottom__container .header-bottom__icon {
+  margin-left: 238px;
+}
+.header .header-bottom .header-bottom__container .header-bottom__order {
+  display: flex;
+  align-items: center;
 }
 
 .hero {
-  max-width: 1925px;
-  height: 788px;
+  padding: 44px 164px 60px;
   background-color: #141414;
   background-image: url("./images/hero-1x.png");
-  background-size: 1925px 788px;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -21,10 +79,9 @@
 }
 
 .innovations {
-  max-width: 1925px;
-  height: 761px;
+  padding: 18px 171px 46px 167px;
   background-image: url("./images/bg-1x.png");
-  background-size: 1925px 761px;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .innovations {

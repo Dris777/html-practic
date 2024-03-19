@@ -10,8 +10,8 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
-        <div class="header-top">
+    <div class="header-top">
+        <div class="container header-top__container">
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">О нас</li>
@@ -25,7 +25,10 @@
             </svg>
             <a href="#" class="header-top__link">Личный кабинет</a>
         </div>
-        <div class="header-bottom">
+
+    </div>
+    <div class="header-bottom">
+        <div class="container header-bottom__container">
             <a href="" class="logo header-bottom__logo">
                 <svg class="logo__icon" width="190" height="43">
                     <use xlink:href="./images/sprite.svg#icon-logo"></use>
@@ -34,7 +37,7 @@
             <label class="header-bottom__label">
                 <svg class="header-bottom__icon" width="12" height="12">
                     <use xlink:href="./images/sprite.svg#icon-search"></use></svg>Поиск
-            <input class="header-bottom__input" type="text" name="search"></label>
+                <input class="header-bottom__input" type="text" name="search"></label>
             <svg class="header-bottom__icon" width="17" height="25">
                 <use xlink:href="./images/sprite.svg#icon-point"></use>
             </svg>
@@ -57,7 +60,9 @@
                 <a href="#" class="order__link">Оформить заказ</a>
             </div>
         </div>
+
     </div>
+
 </header>
 
 <main class="main">
@@ -123,12 +128,22 @@
 
             <ul class="list-products our-products__list ">
                 <li class="list-products__item">
-                    <h1 class="list-products__title">Каталог ножей</h1>
-                    <ul class=" list-categories list-products__list-categories">
-                       <li class="list-categories__item">Разделочные</li>
-                        <li class="list-categories__item">Туристические</li>
-                        <li class="list-categories__item">Охотничьи</li>
-                    </ul>
+                    <div class="item-wrap list-products__item-wrap">
+                        <h1 class="list-products__title">Каталог ножей</h1>
+                        <ul class=" list-categories list-products__list-categories">
+                            <li class="list-categories__item">Разделочные</li>
+                            <li class="list-categories__item">Туристические</li>
+                            <li class="list-categories__item">Охотничьи</li>
+                        </ul>
+                    </div>
+                   <img class="list-products__image" src="./images/knife1-1x.jpg"
+                        srcset="
+                        ./images/knife1-1x.jpg 1x,
+                        ./images/knife1-2x.jpg 2x,
+                        ./images/knife1-3x.jpg 3x"
+                        alt="Меин нож">
+
+
                 </li>
 
                 <li class="list-products__item">

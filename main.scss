@@ -1,20 +1,90 @@
+$light-text:#fff;
 
-//body{
-//  background-color:cadetblue;
-//}
+$main-color:#141414;
 
+$black-color:#000;
+
+$text-color:#ABABAB;
+
+@mixin fontSizeAndLineHeight($font:16px,$height:2.1,$color:#{$text-color}){
+  font-size: $font;
+  line-height: $height;
+  color:$color;
+}
+img{
+  display: block;
+  max-widht:100%;
+  height: auto;
+}
+%link{
+  text-decoration: none;
+}
+%list{
+  list-style: none;
+}
 .container{
   max-width: 1590px;
+  margin: 0 auto;
 }
 
+.header{
+  .header-top{
+    background-color: $main-color;
+
+    .header-top__container{
+      display: flex;
+      align-items:center;
+      //padding: 25px 0;
+
+      .nav__list {
+        @extend %list;
+        display: flex;
+        gap:60px;
+
+        .nav__item {
+          @include fontSizeAndLineHeight(16px, 1.2, $light-text)
+        }
+      }
+
+      .header-top__icon{
+        fill:$light-text;
+        margin-left: auto;
+      }
+      .header-top__link{
+        @include fontSizeAndLineHeight(18px,1.2,$light-text);
+        @extend %link;
+        margin-left: 15px;
+      }
+    }
+
+  }
+
+  .header-bottom{
+    background-color: #ECF1F2;
+    .header-bottom__container{
+      display: flex;
+      align-items: center;
+      .header-bottom__logo{
+        margin-right: 158px;
+      }
+
+      .header-bottom__icon{
+        margin-left: 238px;
+      }
+
+      .header-bottom__order{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
 
 .hero{
-  max-width: 1925px;
-  height: 788px;
+  padding: 44px 164px 60px;
   background-color: #141414;
   background-image: url("./images/hero-1x.png");
-  background-size:1925px 788px;
-
+  background-size:cover ;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
   (min-resolution: 2dppx){
     background-image: url("./images/hero-2x.png");
@@ -28,11 +98,9 @@
 
 
 .innovations{
-  max-width: 1925px;
-  height:761px;
+  padding: 18px 171px 46px 167px;
   background-image:url("./images/bg-1x.png");
-  background-size:1925px 761px;
-  //ЕСЛИ НЕ ЗАДАНА ШИРИНА БЛОКА ТОГДА ДАВЕМ КОВЕР НА ФОН
+  background-size:cover;
 
   @media (min-device-pixel-ratio:2),(min-resolution: 192dpi),
   (min-resolution: 2dppx){
@@ -44,3 +112,11 @@
     background-image: url("./images/bg-3x.png");
   }
 }
+
+
+
+
+
+
+
+
