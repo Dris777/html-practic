@@ -35,9 +35,9 @@
                 </svg>
             </a>
             <label class="header-bottom__label">
-                <svg class="header-bottom__icon" width="12" height="12">
-                    <use xlink:href="./images/sprite.svg#icon-search"></use></svg>Поиск
-                <input class="header-bottom__input" type="text" name="search"></label>
+                <svg class="header-bottom__icon header-bottom__icon--grey" width="12" height="12">
+                    <use xlink:href="./images/sprite.svg#icon-search"></use></svg>
+                <input class="header-bottom__input" type="text" name="search" placeholder="Поиск"></label>
             <svg class="header-bottom__icon" width="17" height="25">
                 <use xlink:href="./images/sprite.svg#icon-point"></use>
             </svg>
@@ -56,8 +56,12 @@
                 <svg class="order__icon" width="37" height="35" >
                     <use xlink:href="./images/sprite.svg#icon-buy"></use>
                 </svg>
-                <p class="order__text">0 р.</p>
-                <a href="#" class="order__link">Оформить заказ</a>
+
+                <div class="order__wrap">
+                    <p class="order__text">0 р.</p>
+                    <a href="#" class="order__link">Оформить заказ</a>
+                </div>
+
             </div>
         </div>
 
@@ -67,14 +71,14 @@
 
 <main class="main">
     <section class="catalog">
-        <h1>ПУСТОЙ</h1>
+        <h1 style="display: none">ПУСТОЙ</h1>
         <div class="container">
             <ul class="catalog__list">
-                <li class="catalog__item"></li>
-                <li class="catalog__item"></li>
-                <li class="catalog__item"></li>
-                <li class="catalog__item"></li>
-                <li class="catalog__item"></li>
+                <li class="catalog__item catalog__item--yellow">Каталог ножей</li>
+                <li class="catalog__item">Клинковое оружие</li>
+                <li class="catalog__item">Сувенирные изделия</li>
+                <li class="catalog__item">Фонари ARMYTEK</li>
+                <li class="catalog__item">Сопуствующие товары</li>
             </ul>
         </div>
     </section>
@@ -85,7 +89,7 @@
            <p class="hero__subtitle">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине
                представлен наиболее широкий выбор Златоустовских ножей от Златоустовских
                Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</p>
-           <button class="btn hero__button"></button>
+           <button class="btn hero__button">Подробнее</button>
            <ul class="list advantages-list">
 
                <li class="advantages-list__item">
