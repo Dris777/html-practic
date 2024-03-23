@@ -238,17 +238,27 @@
 
     <section class="bestseller">
     <div class="container">
-        <h1 class="title bestseller__title">Хиты продаж</h1>
-        <a href="#" class="bestseller__link">Перейти в каталог</a>
-        <svg class="bestseller__icon" width="10" height="16">
-            <use xlink:href="./images/sprite.svg#icon-arrow"></use>
-        </svg>
-        <ul class="products">
+        <div class="wrap-bestseller">
+            <h2 class="title bestseller__title">Хиты продаж</h2>
+            <a href="#" class="link bestseller__link">Перейти в каталог</a>
+            <svg class="bestseller__icon" width="10" height="16">
+                <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
+        </div>
+
+
+        <ul class="products bestseller__products">
             <li class="products__item">
-                <image class="products__image" alt="knife"></image>
-                <h1 class="products__title">Нож Лиса</h1>
-                <p class="products__size">95х18</p>
-                <p class="products__description">Орех,Алюминий</p>
+                <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                     srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                <h2 class="products__title bestseller__products__title">Нож Лиса</h2>
+                <div class="products__wrap-size">
+                    <p class="products__size">95х18</p>
+                    <p class="products__description">Орех,Алюминий</p>
+                </div>
+
                 <ul class="rating">
                     <li class="rating__item">
                         <svg class="rating__icon" width="22" height="22" >
@@ -267,28 +277,39 @@
                             <use xlink:href="./images/sprite.svg#icon-star"></use>
                         </svg>
                     </li>
+                    <li class="rating__item">
+                        <p class="products__feedback">12 отзывов</p>
+                    </li>
                 </ul>
-                <p class="products__feedback">12 отзывов</p>
-                <p class="products__prise">2 719 p.</p>
-                <svg class="products__icon" width="26" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                </svg>
-                <svg class="products__icon" width="28" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-love"></use>
-                </svg>
+                <div class="products__wrap-price">
+                    <p class="products__prise">2 719 p.</p>
+                    <svg class="products__icon" width="26" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                    </svg>
+                    <svg class="products__icon products__icon--yellow" width="28" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-love"></use>
+                    </svg>
+                </div>
+
                 <button class="btn products__btn">
                     В корзину
                 </button>
-                <svg class="products__icon" width="19" height="17">
+                <svg class="products__icon products__icon--inside" width="19" height="17">
                     <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                 </svg>
             </li>
 
             <li class="products__item">
-                <image class="products__image" alt="knife"></image>
-                <h1 class="products__title">Нож Лиса</h1>
-                <p class="products__size">95х18</p>
-                <p class="products__description">Орех,Алюминий</p>
+                <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                     srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                <h2 class="products__title bestseller__products__title">Нож Лиса</h2>
+                <div class="products__wrap-size">
+                    <p class="products__size">95х18</p>
+                    <p class="products__description">Орех,Алюминий</p>
+                </div>
+
                 <ul class="rating">
                     <li class="rating__item">
                         <svg class="rating__icon" width="22" height="22" >
@@ -307,28 +328,39 @@
                             <use xlink:href="./images/sprite.svg#icon-star"></use>
                         </svg>
                     </li>
+                    <li class="rating__item">
+                        <p class="products__feedback">12 отзывов</p>
+                    </li>
                 </ul>
-                <p class="products__feedback">12 отзывов</p>
-                <p class="products__prise">2 719 p.</p>
-                <svg class="products__icon" width="26" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                </svg>
-                <svg class="products__icon" width="28" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-love"></use>
-                </svg>
+                <div class="products__wrap-price">
+                    <p class="products__prise">2 719 p.</p>
+                    <svg class="products__icon" width="26" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                    </svg>
+                    <svg class="products__icon products__icon--yellow" width="28" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-love"></use>
+                    </svg>
+                </div>
+
                 <button class="btn products__btn">
                     В корзину
                 </button>
-                <svg class="products__icon" width="19" height="17">
+                <svg class="products__icon products__icon--inside" width="19" height="17">
                     <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                 </svg>
             </li>
 
             <li class="products__item">
-                <image class="products__image" alt="knife"></image>
-                <h1 class="products__title">Нож Лиса</h1>
-                <p class="products__size">95х18</p>
-                <p class="products__description">Орех,Алюминий</p>
+                <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                     srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                <h2 class="products__title bestseller__products__title">Нож Лиса</h2>
+                <div class="products__wrap-size">
+                    <p class="products__size">95х18</p>
+                    <p class="products__description">Орех,Алюминий</p>
+                </div>
+
                 <ul class="rating">
                     <li class="rating__item">
                         <svg class="rating__icon" width="22" height="22" >
@@ -347,28 +379,39 @@
                             <use xlink:href="./images/sprite.svg#icon-star"></use>
                         </svg>
                     </li>
+                    <li class="rating__item">
+                        <p class="products__feedback">12 отзывов</p>
+                    </li>
                 </ul>
-                <p class="products__feedback">12 отзывов</p>
-                <p class="products__prise">2 719 p.</p>
-                <svg class="products__icon" width="26" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                </svg>
-                <svg class="products__icon" width="28" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-love"></use>
-                </svg>
+                <div class="products__wrap-price">
+                    <p class="products__prise">2 719 p.</p>
+                    <svg class="products__icon" width="26" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                    </svg>
+                    <svg class="products__icon products__icon--yellow" width="28" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-love"></use>
+                    </svg>
+                </div>
+
                 <button class="btn products__btn">
                     В корзину
                 </button>
-                <svg class="products__icon" width="19" height="17">
+                <svg class="products__icon products__icon--inside" width="19" height="17">
                     <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                 </svg>
             </li>
 
             <li class="products__item">
-                <image class="products__image" alt="knife"></image>
-                <h1 class="products__title">Нож Лиса</h1>
-                <p class="products__size">95х18</p>
-                <p class="products__description">Орех,Алюминий</p>
+                <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                     srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                <h2 class="products__title bestseller__products__title">Нож Лиса</h2>
+                <div class="products__wrap-size">
+                    <p class="products__size">95х18</p>
+                    <p class="products__description">Орех,Алюминий</p>
+                </div>
+
                 <ul class="rating">
                     <li class="rating__item">
                         <svg class="rating__icon" width="22" height="22" >
@@ -387,19 +430,24 @@
                             <use xlink:href="./images/sprite.svg#icon-star"></use>
                         </svg>
                     </li>
+                    <li class="rating__item">
+                        <p class="products__feedback">12 отзывов</p>
+                    </li>
                 </ul>
-                <p class="products__feedback">12 отзывов</p>
-                <p class="products__prise">2 719 p.</p>
-                <svg class="products__icon" width="26" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                </svg>
-                <svg class="products__icon" width="28" height="25">
-                    <use xlink:href="./images/sprite.svg#icon-love"></use>
-                </svg>
+                <div class="products__wrap-price">
+                    <p class="products__prise">2 719 p.</p>
+                    <svg class="products__icon" width="26" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                    </svg>
+                    <svg class="products__icon products__icon--yellow" width="28" height="25">
+                        <use xlink:href="./images/sprite.svg#icon-love"></use>
+                    </svg>
+                </div>
+
                 <button class="btn products__btn">
                     В корзину
                 </button>
-                <svg class="products__icon" width="19" height="17">
+                <svg class="products__icon products__icon--inside" width="19" height="17">
                     <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                 </svg>
             </li>
@@ -409,20 +457,31 @@
     </section>
 
     <section class="innovations">
-        <div class="container">
-            <h1 class="title innovations__title">Новинки</h1>
-            <p class="innovations__subtitle">
-                Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
-            </p>
-            <a href="#" class="innovations__link">Больше новинок</a>
-            <svg class="innovations__icon" width="9" height="17">
-                <use xlink:href="./images/sprite.svg#icon-arrow"></use></svg>
-            <ul class="products">
-                <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+        <div class="container innovations__container">
+            <div class="innovations__wrap">
+                <h2 class="title innovations__title">Новинки</h2>
+                <p class="innovations__subtitle">
+                    Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+                </p>
+                <a href="#" class="innovations__link">Больше новинок</a>
+                <svg class="innovations__icon" width="9" height="17">
+                    <use xlink:href="./images/sprite.svg#icon-arrow"></use></svg>
+            </div>
+
+
+            <ul class="products innovations__products">
+
+                <li class="products__item ">
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title innovations__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -441,28 +500,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
-                <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                <li class="products__item ">
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title innovations__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -481,28 +551,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
-                <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                <li class="products__item ">
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title innovations__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -521,22 +602,29 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
+
+
             </ul>
         </div>
 
@@ -545,18 +633,26 @@
 
     <sections class="shares">
         <div class="container">
-            <h1 class="title shares__title">Акции</h1>
-            <a href="#" class="shares__link">Все акции</a>
-            <svg class="shares__icon" width="10" height="16">
-                <use xlink:href="./images/sprite.svg#icon-arrow"></use>
-            </svg>
-            <ul class="products">
+            <div class="wrap-shares">
+                <h2 class="title shares__title">Акции</h2>
+                <a href="#" class="shares__link">Все акции</a>
+                <svg class="shares__icon " width="10" height="16">
+                    <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+            </div>
 
+            <ul class="products shares__products">
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -575,28 +671,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -615,28 +722,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -655,28 +773,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -695,22 +824,28 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
+
             </ul>
         </div>
 
@@ -719,18 +854,26 @@
 
     <sections class="shares">
         <div class="container">
-            <h1 class="title shares__title">Акции</h1>
-            <a href="#" class="shares__link">Все акции</a>
-            <svg class="shares__icon" width="10" height="16">
-                <use xlink:href="./images/sprite.svg#icon-arrow"></use>
-            </svg>
-            <ul class="products">
+            <div class="wrap-shares">
+                <h2 class="title shares__title">Акции</h2>
+                <a href="#" class="shares__link">Все акции</a>
+                <svg class="shares__icon " width="10" height="16">
+                    <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+            </div>
 
+            <ul class="products shares__products">
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -749,28 +892,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -789,28 +943,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -829,28 +994,39 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
 
                 <li class="products__item">
-                    <image class="products__image" alt="knife"></image>
-                    <h1 class="products__title">Нож Лиса</h1>
-                    <p class="products__size">95х18</p>
-                    <p class="products__description">Орех,Алюминий</p>
+                    <img class="products__image" alt="knife" src="./images/knife-main-1x.jpg"
+                         srcset="./images/knife-main-1x.jpg 1x,
+                             ./images/knife-main-2x.jpg 2x,
+                             ./images/knife-main-3x.jpg 3x">
+                    <h2 class="products__title shares__products__title">Нож Лиса</h2>
+                    <div class="products__wrap-size">
+                        <p class="products__size">95х18</p>
+                        <p class="products__description">Орех,Алюминий</p>
+                    </div>
+
                     <ul class="rating">
                         <li class="rating__item">
                             <svg class="rating__icon" width="22" height="22" >
@@ -869,22 +1045,28 @@
                                 <use xlink:href="./images/sprite.svg#icon-star"></use>
                             </svg>
                         </li>
+                        <li class="rating__item">
+                            <p class="products__feedback">12 отзывов</p>
+                        </li>
                     </ul>
-                    <p class="products__feedback">12 отзывов</p>
-                    <p class="products__prise">2 719 p.</p>
-                    <svg class="products__icon" width="26" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-scales"></use>
-                    </svg>
-                    <svg class="products__icon" width="28" height="25">
-                        <use xlink:href="./images/sprite.svg#icon-love"></use>
-                    </svg>
+                    <div class="products__wrap-price">
+                        <p class="products__prise">2 719 p.</p>
+                        <svg class="products__icon" width="26" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-scales"></use>
+                        </svg>
+                        <svg class="products__icon products__icon--yellow" width="28" height="25">
+                            <use xlink:href="./images/sprite.svg#icon-love"></use>
+                        </svg>
+                    </div>
+
                     <button class="btn products__btn">
                         В корзину
                     </button>
-                    <svg class="products__icon" width="19" height="17">
+                    <svg class="products__icon products__icon--inside" width="19" height="17">
                         <use xlink:href="./images/sprite.svg#icon-xz3"></use>
                     </svg>
                 </li>
+
             </ul>
         </div>
 
