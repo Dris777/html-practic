@@ -644,4 +644,158 @@ gap: 47px;
 /*description*/
 .description{
   margin-top: 120px;
+  padding: 60px 0;
+  background-image: url("./images/des-1x.png");
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url("./images/des-2x.png");
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url("./images/des-3x.png");
+
+  }
+}
+
+.description__title{
+  @include fontSizeAndLineHeight(30px,1.5,#E8AA31,700);
+  margin-bottom: 30px;
+ text-align: center;
+}
+
+.description__text{
+  @include fontSizeAndLineHeight(18px,1.5,#fff,500);
+  padding-right: 33px;
+}
+
+/*footer*/
+.footer{
+  background-color: $main-color;
+  padding-top: 102px;
+  padding-bottom: 49px;
+}
+/* footer part1 */
+.footer-nav__list-nav{
+  display: flex;
+  gap: 144px;
+  position: relative;
+
+  &::after{
+    display: block;
+    content: "";
+    width: 1575px;
+    height: 1px;
+    background-color: #FFFFFF80;
+    position: absolute;
+    left: 1px;
+    bottom: -30px;
+  }
+}
+.list-nav__item{
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 144px * 4) / 4);
+
+  & a:not(:last-child){
+    margin-bottom: 20px;
+  }
+
+  &:not(:first-child)p{
+    margin-bottom: 30px;
+  }
+  &:first-child p{
+    margin-bottom: 23px;
+  }
+}
+.list-nav__title{
+  @include fontSizeAndLineHeight(18px,1.2,#fff);
+}
+.list-nav__link{
+  @include fontSizeAndLineHeight(18px,1.5,#FFFFFFCC,500);
+}
+
+
+
+/* footer part2 */
+
+.footer-contact{
+  margin-top: 65px;
+}
+.footer-contact__list{
+  display: flex;
+}
+.footer-contact__item{
+
+  &:last-child{
+    position: relative;
+  }
+}
+.footer-contact__item--first{
+  width: 194px;
+  flex-shrink: 0;
+}
+
+.footer-contact__title{
+  @include fontSizeAndLineHeight(18px,1.2,#fff);
+
+.footer-contact__item:not(:last-child) &{
+  margin-bottom:30px;
+}
+  .footer-contact__item:last-child &{
+    margin-bottom:15px;
+  }
+}
+.footer-contact__text{
+  @include fontSizeAndLineHeight(18px,1.5,#FFFFFFCC,500);
+}
+.footer-contact__text-another{
+  color:#E8AA31;
+}
+
+.address__link{
+  @include fontSizeAndLineHeight(18px,1.5,#FFFFFFCC,500);
+}
+.footer-contact__input{
+  width: 375px;
+  height: 50px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 50px 15px 20px;
+}
+.footer-contact__button{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 93px;
+}
+.footer-contact__input{
+  @include fontSizeAndLineHeight(16px,1.2,#FFFFFF85,500);
+}
+.footer-contact__checkbox{
+  border-radius: 2px;
+}
+.footer-contact__content{
+  @include fontSizeAndLineHeight(16px,1.4,#FFFFFFCC,500);
+}
+.footer-contact__text{
+  .footer-contact__item:last-child &{
+    margin-bottom:26px;
+  }
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.address__icon{
+  fill: $light-text;
+  margin-right: 16px;
+}
+
+.social-list{
+  margin-top: 30px;
+  display: flex;
+  gap: 22px;
 }
