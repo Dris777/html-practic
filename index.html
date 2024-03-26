@@ -2026,29 +2026,29 @@
                     области</a>
                 <a href="" class="list-nav__link">Ножевые стали</a>
                 <a href="" class="list-nav__link">О нас</a>
-                <a href="" class="list-nav__title">Условия оплаты
+                <a href="" class="list-nav__link">Условия оплаты
                     и доставки</a>
-                <a href="" class="list-nav__title">Политика
+                <a href="" class="list-nav__link">Политика
                     конфиденциальности</a>
             </li>
 
             <li class="list-nav__item">
                 <p class="list-nav__title">СЛУЖБА ПОДДЕРЖКИ</p>
-                <a href="" class="list-nav__title">Контактная информация</a>
+                <a href="" class="list-nav__link">Контактная информация</a>
                 <a href="" class="list-nav__link">Возврат товара</a>
                 <a href="" class="list-nav__link">Карта сайта</a>
             </li>
 
             <li class="list-nav__item">
                 <p class="list-nav__title">ДОПОЛНИТЕЛЬНО</p>
-                <a href="" class="list-nav__title">Подарочные сертификаты</a>
+                <a href="" class="list-nav__link">Подарочные сертификаты</a>
                 <a href="" class="list-nav__link">Партнеры</a>
                 <a href="" class="list-nav__link">Товары со скидкой</a>
             </li>
 
             <li class="list-nav__item">
                 <p class="list-nav__title">ЛИЧНЫЙ КАБИНЕТ</p>
-                <a href="" class="list-nav__title">Личный кабинет</a>
+                <a href="" class="list-nav__link">Личный кабинет</a>
                 <a href="" class="list-nav__link">История заказов</a>
                 <a href="" class="list-nav__link">Мои закладки</a>
                 <a href="" class="list-nav__link">Рассылка новостей</a>
@@ -2056,34 +2056,43 @@
         </ul>
     </div>
 </section>
+
     <section class="footer-contact">
         <div class="container">
             <ul class="footer-contact__list">
-                <li class="footer-contact__item">
+                <li class="footer-contact__item footer-contact__item--first">
                     <h2 class="footer-contact__title"> КОНТАКТЫ</h2>
 
                     <ul class="address">
 
                         <li class="address__item">
-                            <svg class="address__icon"></svg>
+                            <svg class="address__icon" width="15" height="16">
+                                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
                             <a href="" class="address__link">8 (800) 777-49-67</a>
                         </li>
 
                         <li class="address__item">
-                            <svg class="address__icon"></svg>
+                            <svg class="address__icon" width="16" height="16" >
+                                <use xlink:href="./images/sprite.svg#icon-xz4"></use>
+                            </svg>
                             <a href="" class="address__link">Пн-Пт
-                                7:00 - 16:00 (МСК)</a>
+                                <span class="test">7:00 - 16:00 (МСК)</span></a>
                         </li>
 
                         <li class="address__item">
-                            <svg class="address__icon"></svg>
+                            <svg class="address__icon" width="11" height="16">
+                                <use xlink:href="./images/sprite.svg#icon-point"></use>
+                            </svg>
                             <a href="" class="address__link">Златоуст,
                                 ул. Шоссейная,
                                 д. 1, офис «6Б»</a>
                         </li>
 
                         <li class="address__item">
-                            <svg class="address__icon"></svg>
+                            <svg class="address__icon" width="18" height="13">
+                                <use xlink:href="./images/sprite.svg#icon-xz2"></use>
+                            </svg>
                             <a href="" class="address__link">info@zlatmax.ru</a>
                         </li>
 
@@ -2091,19 +2100,19 @@
                 </li>
                 <li class="footer-contact__item">
                     <h2 class="footer-contact__title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
-                    <p class="footer-contact__text"></p>
+                    <p class="footer-contact__text">Способы оплаты и доставки</p>
                 </li>
                 <li class="footer-contact__item">
                     <h2 class="footer-contact__title">НАША ГАРАНТИЯ</h2>
                     <p class="footer-contact__text">Недовольны своей покупкой?
                         Вы можете вернуть ее в течении
                         30 дней с даты получения,
-                        согласно нашим правилам</p>
+                        согласно <span class="footer-contact__text-another">нашим правилам</span></p>
                 </li>
                 <li class="footer-contact__item">
                     <h2 class="footer-contact__title"> НОВОСТНАЯ РАССЫЛКА</h2>
                     <p class="footer-contact__text">Подпишитесь прямо сейчас!</p>
-                    <input type="text" class="footer-contact__input">
+                    <input type="text" class="footer-contact__input" placeholder="example@gmail.com">
                     <button class="btn footer-contact__button">
                         <svg class="footer-contact__icon" width="9" height="16">
                             <use xlink:href="./images/sprite.svg#icon-arrow"></use>
@@ -2143,6 +2152,7 @@
             </ul>
         </div>
     </section>
+
     <section class="copyrighting">
         <div class="container">
             <h2>ПУСТОЙ скрыть</h2>
@@ -2152,6 +2162,7 @@
             <p class="copyrighting__text">Златоустовские ножи www.zlatmax.ru ©</p>
         </div>
     </section>
+
 </footer>
 </body>
 </html>
