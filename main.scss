@@ -66,7 +66,17 @@ img{
 .container{
   max-width: 1590px;
   margin: 0 auto;
-}
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+
+      width: 320px;
+      margin: 0 auto;
+    padding: 0 15px;
+    //background-color: red;
+    }
+  }
+
+
 .btn{
   width: 335px;
   height: 50px;
@@ -79,66 +89,99 @@ img{
 }
 .header{
 
-  .header-top{
-    background-color: $main-color;
-    padding: 25px 0;
+}
+.header__container{
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    padding: 0 0;
+  }
+}
+.header-menu{
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.header-top{
+  background-color: $main-color;
+  padding: 25px 0;
+}
+.header-top__container{
+  display: flex;
+  align-items:center;
+  //padding: 25px 0;
 
-    .header-top__container{
-      display: flex;
-      align-items:center;
-      //padding: 25px 0;
+  @media screen and (min-width:320px) and (max-width: 600px) {
 
-      .nav__list {
-        display: flex;
-        gap:60px;
+    width: 320px;
+    margin: 0 0;
+  }
+}
+.nav__list {
+  display: flex;
+  gap:60px;
 
-        .nav__item {
-          @include fontSizeAndLineHeight(16px, 1.2, $light-text,500)
-        }
-      }
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
+}
+.nav__item {
+  @include fontSizeAndLineHeight(16px, 1.2, $light-text,500)
+}
+.header-top__icon{
+  fill:$light-text;
+  margin-left: auto;
 
-      .header-top__icon{
-        fill:$light-text;
-        margin-left: auto;
-      }
-      .header-top__link{
-        @include fontSizeAndLineHeight(18px,1.2,$light-text);
-        margin-left: 15px;
-      }
-    }
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.header-top__link{
+  @include fontSizeAndLineHeight(18px,1.2,$light-text);
+  margin-left: 15px;
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
+}
+.header-bottom{
+  background-color: #ECF1F2;
+  padding: 22px 0;
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    padding: 14px 0 15px 0;
 
   }
 
-  .header-bottom{
-    background-color: #ECF1F2;
-    padding: 22px 0;
-    .header-bottom__container{
-      display: flex;
-      align-items: center;
+}
+.header-bottom__container{
+  display: flex;
+  align-items: center;
 
-
-
-
-
-
-
-
-
-    }
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: block;
+    padding: 0 0;
   }
 }
 .header-bottom__logo{
   margin-right: 158px;
+  margin-left: 32px;
 }
 .header-bottom__label{
   @include fontSizeAndLineHeight(14px,1.2,#00000080,500);
   position: relative;
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 .header-bottom__icon--grey{
   fill:#00000080;
   position:absolute;
   left: 20px;
   top: 15px;
+
+
 }
 .header-bottom__input{
   width: 377px;
@@ -149,26 +192,50 @@ img{
   @include fontSizeAndLineHeight(14px,1.2,#00000080,500);
   padding: 12px 10px 12px 42px;
   margin-right: 238px;
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .header-bottom__text{
 @include fontSizeAndLineHeight(18px,1.2,$black-color);
   margin: 0 55px 0 10px;
-}
 
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
+}
+.header-bottom__icon{
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
+}
 .callback{
   display: flex;
   gap: 3px;
   flex-direction: column;
   position: relative;
   margin-right: 54px;
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 .callback__number{
   @include fontSizeAndLineHeight(18px,1.2,$black-color);
   margin-right: 17px;
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 .callback__link{
   @include fontSizeAndLineHeight(18px,1.2,#E8AA31,700);
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 .callback__icon{
   fill:#E8AA31;
@@ -176,12 +243,20 @@ img{
   right: -10px;
   top: 3px;
   transform: rotate(90deg);
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 
 
 .header-bottom__order{
   display: flex;
   align-items: center;
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 .order__icon:first-child{
   margin-right: 30px;
@@ -195,10 +270,20 @@ img{
   margin-left: 15px;
 }
 .order__text{
-@include fontSizeAndLineHeight(16px,1.2,$black-color,500)
+@include fontSizeAndLineHeight(16px,1.2,$black-color,500);
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
+
+
 }
 .order__link{
-  @include fontSizeAndLineHeight(16px,1.2,#E8AA31,500)
+  @include fontSizeAndLineHeight(16px,1.2,#E8AA31,500);
+
+  @media screen and (min-width:320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 
 /*main*/
@@ -207,6 +292,10 @@ img{
 
 .catalog{
   background-color:$main-color;
+
+  @media screen and (min-width: 320px) and (max-width: 600px){
+    display: none ;
+  }
 }
 .catalog__list{
   display: flex;
@@ -240,16 +329,33 @@ img{
   (min-resolution: 3dppx){
     background-image: url("./images/hero-3x.png");
   }
+
+  @media screen and (min-width: 320px) and (max-width: 600px){
+    padding: 29px 0 49px 0;
+  }
 }
 
 .hero__title{
   @include fontSizeAndLineHeight(36px,1.2,$light-text,500);
   width: 50%;
+
+  @media screen and (min-width: 320px) and (max-width: 600px){
+    @include fontSizeAndLineHeight(26px,1.6,$light-text,700);
+    width: 100%;
+    margin-bottom: 7px;
+  }
 }
+
 .hero__subtitle{
   @include fontSizeAndLineHeight(20px,1.5,#FFFFFFB3,500);
   margin-top: 30px;
   width: 58%;
+
+  @media screen and (min-width: 320px) and (max-width: 600px){
+    width: 100%;
+    @include fontSizeAndLineHeight(16px,1.5,#FFFFFFB3,500);
+    margin-bottom: 16px;
+  }
 }
 
 .hero__button{
@@ -257,13 +363,29 @@ img{
   font-size: 20px;
   line-height: 2.3;
   margin-top: 60px;
-}
 
+  @media screen and (min-width: 320px) and (max-width: 600px){
+    display: none ;
+  }
+}
+.hero__img{
+display: none;
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+display: block;
+    margin: 0 auto;
+  }
+}
 .advantages-list{
   display: flex;
   align-items: center;
   gap: 140px;
   margin-top: 198px;
+  
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    margin-top: 46px;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .advantages-list__item{
   display: flex;
@@ -285,6 +407,10 @@ img{
 /* our-products */
 .our-products{
   margin-top: 100px;
+
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    margin-top: 60px;
+  }
 }
 
 .list-products{
@@ -293,6 +419,9 @@ img{
   justify-content: space-between;
   gap: 29px;
 
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 .list-products__item{
   position: relative;
@@ -304,6 +433,12 @@ img{
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   z-index: 2;
+}
+.list-products__image{
+
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    filter: opacity(0.5);
+  }
 }
 
 .list-categories,
@@ -349,23 +484,42 @@ img{
 
 .bestseller{
   margin-top: 121px;
+  
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    margin-top: 60px;
+  }
 }
 .wrap-bestseller{
   @extend %everySectionWrap;
+
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    justify-content: center;
+  }
 }
 .bestseller__title{
   margin-right: auto;
 
-
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    text-align: center;
+    margin-right: 0;
+  }
 }
 .bestseller__link{
   //margin-right: 15px;
   //@include fontSizeAndLineHeight(18px,2.5,#14141494);
   @extend %everySectionLink;
+
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .bestseller__icon{
   fill:#E8AA31;
+
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .products{
